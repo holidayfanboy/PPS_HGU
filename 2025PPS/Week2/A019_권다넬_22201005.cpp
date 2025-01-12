@@ -15,9 +15,9 @@ int main() {
     
     while (sum >= 10)
     {
-        int temp = sum % 10;
+        int temp = sum % 10; //첫번째 수 구함
         sorted.push_back(temp); 
-        sum = sum / 10;
+        sum = sum / 10; //첫번째 수 지우기
     }
 
     sorted.push_back(sum); 
@@ -29,7 +29,7 @@ int main() {
 
     for (int i = 0; i <= 9; i++)
     {
-        cout << calculate[i] << endl;
+        cout << calculate[i] << endl; //결과 출력
     }
 
     return 0;
@@ -37,6 +37,7 @@ int main() {
 
 void Numbering(int a, vector<int>&b)
 {
+    //0~9 찾아서 맞는 곳에 +1
     if (a == 0)
     {
         b[0]++;
