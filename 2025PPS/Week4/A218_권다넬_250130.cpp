@@ -12,10 +12,10 @@ int main()
         cin >> candy >> child;
         int you;
         int dad;
-        you = candy/N;
-        dad = candy%N;
+        you = candy/child;
+        dad = candy%child;
 
-        cout << "You get " << you << " piece(s) and your dad gets " << dad << " piece(s).";
+        cout << "You get " << you << " piece(s) and your dad gets " << dad << " piece(s)." << endl;
     }
 
     return 0;
